@@ -1,0 +1,2 @@
+0000000000000000000000000000000000000000 229be143fbe6a9cf4b0abd57e977109d91be30d9 K2\marko <kmarko.net@gmail.com> 1562700246 +0200	branch: Created from adminapiui-dynaform
+229be143fbe6a9cf4b0abd57e977109d91be30d9 fb6cdbad596436d4a59be71c59db7f5b782d1484 K2\marko <kmarko.net@gmail.com> 1562700279 +0200	commit: only able to fork if all displaytypes are determined to be complex or primitive

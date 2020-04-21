@@ -1,0 +1,22 @@
+<div>
+  <div>
+    Create new Entity
+    <div (click)="onNewClicked()" class="new-entity-definition">
+        <i class="fas fa-plus"></i>
+    </div>
+  </div>  
+  <div class="">
+    Entity types
+    <ag-grid-angular 
+        style="width: 550px; height: 500px;" 
+        class="ag-theme-balham"
+        [rowData]="entityDefinitions" 
+        
+        [gridOptions]="gridOptions" 
+        >
+        <ag-grid-column [width]="300" headerName="Name" field="name" ></ag-grid-column>
+        <ag-grid-column [width]="200" headerName="Operations" 
+                  [headerComponentFramework]="operationsHeaderComponent" [cellRendererFramework]="operationsCellComponent"></ag-grid-column>
+    </ag-grid-angular>
+  </div>
+</div>

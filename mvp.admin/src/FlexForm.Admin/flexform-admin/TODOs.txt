@@ -1,0 +1,111 @@
+https://medium.com/@rubenvermeulen/running-angular-cli-over-https-with-a-trusted-certificate-4a0d5f92747a
+
+összehasonlító táblázat estimate és a valós ráfordítás kapcsán
+újra kell esztimálni a fennmaradó feladatokat
+statikus listába a propertyk
+
+
+elgondolkodni rajta:
+	
+	form designer:
+		- milyen példákat szeretnék
+		- crud metódusok insomnián keresztül
+		- minden műveletet érteni kell
+		
+	user managment:
+		- user group
+			- kilistázni a user groupak	 (mint a form list)
+				- row detailbe a userek	 (mint a form list)
+		- users
+			- alatta felsorolni hogy milyen role-okba tartozik (mint a form list)
+		- role editor (usergroup)
+			- név - description	- létrehozás, törlés (ha van neki usere akkor nem lehet törölni)
+				- lista a userekről, hogy kik tartoznak bele és hozzá lehet adni
+		- users
+			- firstname,lastname, username(emial)
+				- lista a groupokról, hogy kik tartoznak bele és hozzá lehet adni
+				
+	login-authentikáció:
+		- nincs jelszavas login
+		- google és facebook azonosítás van
+		- 2 built in role,, ami nem jelenik meg a designerben (admin és user)
+			- gridre kell filtert tenni hogy a "DDE." kezdetű role-ok nem szerkeszthetőek (vagy meg se jelennek)
+				- pont emiatt nem kezdődhet új role "DDE."-al
+		- login: 3rd party login provider-t hogy lehet beépíteni angular-ba:
+			- cikket várok sándortól: 
+				https://fullstackmark.com/post/13/jwt-authentication-with-aspnet-core-2-web-api-angular-5-net-core-identity-and-facebook-login
+				további olvasnivaló
+					https://dejanstojanovic.net/aspnet/2018/june/token-based-authentication-in-aspnet-core-part-1/
+					https://dejanstojanovic.net/aspnet/2018/june/token-based-authentication-in-aspnet-core-part-2/
+					https://dejanstojanovic.net/aspnet/2018/june/token-based-authentication-in-aspnet-core-part-3/
+			
+	form generátor:
+		- binding nélkül
+		
+
+
+
+
+
+
+google és face login hiányos, sok idő ráment látszólag feleslegesen
+a dynaform engine alapjai megvannak
+mennyi a ráfordítható idő a dynaformra?
+entity instance controller kellene
+
+jiraba korábbi taskokat bevinni
+css class kellene ui propertybe
+EntityCollection esetén pl dropdownba megy JELENLEG 1 tulajdonsága
+legyen kidolgozva a többi control - combobox, checkbox
+giraba felvenni minden displaytypeot, proeprtyt, rendererjét, stb
+entityCollection grid header jelenik meg a form designer previewban - de ezt tegyük félre
+
+
+jiraba kellene funckiókat felvinni
+
+
+
+
+
+
+
+
+
+
+
+alphanumeric nem engedi be jobbra nyilat
+save cancel gomb szövege megadható
+constants service legyen setting service, lesz erre egy endpoint (get,set), amit alkalmazás induláskor kell hívni, közben homokórázni
+
+illetve globálisan hogy megjelenjen-e (akkor is ha rootform)
+
+combobox - entity reference
+	x - null szelekció esetén
+listbox - multiselect - entity collection
+	x - null szelekció esetén
+	
+dynaform rendereléskor entity instance betöltés
+	controller-> testdata, livedata (common interface)
+		testdata service: imetsourcedefinition need to backend (nullable pm in paging)
+		liveadta service: itemsurcedefinitionidneed to backend (nullable pm in paging)
+	
+	
+This app isn't verified
+This app hasn't been verified by Google yet. Only proceed if you know and trust the developer.
+Hide Advanced
+Google hasn't reviewed this app yet and can't confirm it's authentic. Unverified apps may pose a threat to your personal data. Learn more
+Go to FlexForm (unsafe)
+
+
+
+
+backend service-ek bővítése helyett a createProperty és loadProperty-t kell kiegészíteni FieldDefinition-al FormcControl esetén és úgy meglesz az adat!!!!
+mondjuk kérdés hogy ez itt mit csinál?!?
+    if(response.fieldDefinition){
+      formControlBinding.fieldDefinition = await this.loadFieldDefinition(response.fieldDefinition);
+    }else{
+      formControlBinding.fieldDefinition = entityDefinition.fieldDefinitions.find(d => d.id == formControlBinding.fieldDefinitionId);
+    }
+	
+	
+kapok entity instance-ra adatot

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>FlexForm.DDE.Database</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{acaa61e3-d86d-42d3-9987-2b4e6e960796}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>FlexForm.DDE.Database</RootNamespace>
+    <AssemblyName>FlexForm.DDE.Database</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo" />
+    <Folder Include="Security" />
+    <Folder Include="enum" />
+    <Folder Include="Deployment" />
+    <Folder Include="Deployment\Seeds" />
+    <Folder Include="dbo\aspnet" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="enum\AuditLogTypeConstraint.sql" />
+    <Build Include="Security\enum.sql" />
+    <Build Include="enum\DisplayTypeConstraint.sql" />
+    <Build Include="enum\FieldTypeConstraint.sql" />
+    <Build Include="enum\FormTypeConstraint.sql" />
+    <Build Include="dbo\AuditLog.sql" />
+    <Build Include="dbo\EntityCollectionMember.sql" />
+    <Build Include="dbo\EntityDefinition.sql" />
+    <Build Include="dbo\EntityInstance.sql" />
+    <Build Include="dbo\EntityInstanceArchive.sql" />
+    <Build Include="dbo\FieldDefinition.sql" />
+    <Build Include="dbo\FieldValue.sql" />
+    <Build Include="dbo\FieldValueArchive.sql" />
+    <Build Include="dbo\FormControl.sql" />
+    <Build Include="dbo\FormControlBinding.sql" />
+    <Build Include="dbo\FormDefinition.sql" />
+    <Build Include="dbo\FormPermission.sql" />
+    <Build Include="dbo\ItemSourceDefinition.sql" />
+    <Build Include="dbo\User.sql" />
+    <Build Include="dbo\UserGroup.sql" />
+    <Build Include="dbo\UserGroupMember.sql" />
+    <Build Include="dbo\ValidationRule.sql" />
+    <Build Include="dbo\ValidationRuleFieldDefinition.sql" />
+    <Build Include="dbo\ValidationRuleFormControlBinding.sql" />
+    <Build Include="dbo\ValidationRuleFormDefinition.sql" />
+    <Build Include="dbo\aspnet\AspNetRoleClaims.sql" />
+    <Build Include="dbo\aspnet\AspNetRoles.sql" />
+    <Build Include="dbo\aspnet\AspNetUserClaims.sql" />
+    <Build Include="dbo\aspnet\AspNetUserLogins.sql" />
+    <Build Include="dbo\aspnet\AspNetUserRoles.sql" />
+    <Build Include="dbo\aspnet\AspNetUsers.sql" />
+    <Build Include="dbo\aspnet\AspNetUserTokens.sql" />
+    <Build Include="dbo\FormControlItemSource.sql" />
+    <Build Include="dbo\UserSettings.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Deployment\Seeds\Contraints.sql" />
+    <None Include="Deployment\Seeds\TestUsers.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="FlexForm.DDE.Database.refactorlog" />
+  </ItemGroup>
+</Project>

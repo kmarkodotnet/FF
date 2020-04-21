@@ -1,0 +1,31 @@
+// form editor heights
+.form-editor-container{
+    min-height: 90vh !important;
+    height: 90vh !important;
+    max-height: 90vh !important;
+}
+
+.form-editor-container-element{
+    min-height: 85vh !important;
+    height: 85vh !important;
+    max-height: 85vh !important;
+}
+
+
+.selected {
+    background-color: rgb(147, 185, 201) !important;
+    color: white;
+  }
+
+// setting fields panel overflow
+.form-editor-container-fields{
+    overflow-x: auto;
+}
+
+// setting designer panel overflow and restrict height
+.form-editor-container-designer 
+{
+    overflow-x: auto;
+    max-height: 80vh;
+    height: 100%;
+}

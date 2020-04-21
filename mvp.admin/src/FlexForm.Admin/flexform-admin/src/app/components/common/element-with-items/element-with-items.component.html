@@ -1,0 +1,58 @@
+
+<div class="list-container">
+    <div *ngIf="newElementIsVisible()">
+      Create new {{getElementDisplayType()}}
+      <div (click)="newElement()" class="new-entity-definition">
+          <i class="fas fa-plus"></i>
+      </div>
+    </div>  
+  <ul id="list-container-ul">
+    <li *ngFor="let element of getElements" class="form-list-entity-definition-item col-12"  class="border border-dark">
+      <div class="main-list-item col-12">
+        <div class="row">
+          <div (click)="toggleElement(element)" class="col-9 row">
+            <div class="col-11">{{getElementName(element)}}</div>
+            <div class="col-1">
+              <i *ngIf="!elementIsOpen(element)" class="fas fa-chevron-down"></i>
+              <i *ngIf="elementIsOpen(element)" class="fas fa-chevron-up"></i>
+            </div>
+          </div>
+          <div class="col-1 add-item">
+            <i *ngIf="addItemIsVisible(element)" class="fas fa-plus" (click)="addItem(element)"></i>
+          </div>
+          <div class="col-2 row">
+            <div *ngIf="modifyElementIsVisible(element)" class="col-6 ">
+              <i class="fas fa-edit" (click)="modifyElement(element)"></i>
+            </div>          
+            <div *ngIf="deleteElementIsVisible(element)" class="col-6 ">
+              <i class="fas fa-trash-alt" (click)="deleteElement(element)"></i>
+            </div>
+          </div>
+        </div>
+        <ul id="getElementId(element)" *ngIf="elementIsOpen(element)">
+            <li *ngFor="let item of getItems(element)" class="border border-dark  sub-list-item">
+              <div class="row">
+                <div class="col-10">
+                  {{getItemName(item)}}
+                </div>
+                <div class="col-2 row">
+                  <div *ngIf="modifyItemIsVisible(item)" class="col-2" >
+                    <i class="fas fa-edit" (click)="modifyItem(item)"></i>
+                  </div>                      
+                  <div *ngIf="deleteItemIsVisible(element,item)" class="col-2">
+                    <i class="fas fa-trash-alt" (click)="deleteItem(element,item)"></i>
+                  </div>                
+                  <div *ngIf="viewItemIsVisible(item)" class="col-2">
+                    <i class="fas fa-eye" (click)="viewItem(item)"></i>
+                  </div>                      
+                  <div *ngIf="cloneItemIsVisible(item)" class="col-2">
+                    <i class="far fa-copy" (click)="cloneItem(item)"></i>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>      
+      </div>
+    </li>
+  </ul>      
+</div>

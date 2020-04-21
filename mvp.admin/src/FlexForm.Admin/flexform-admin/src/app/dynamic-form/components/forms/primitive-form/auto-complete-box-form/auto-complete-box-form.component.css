@@ -1,0 +1,9 @@
+.auto-complete-box-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+.auto-complete-box-form-full-width {
+    width: 100%;
+  }

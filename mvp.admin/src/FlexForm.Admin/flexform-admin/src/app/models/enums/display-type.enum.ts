@@ -1,0 +1,32 @@
+export enum DisplayType {
+    AutoCompleteBox = 0,
+    Button = 1,
+    Breadcrumb = 2,
+    CascadeComboBox = 3,
+    CheckBox = 4,
+    ComboBox = 5,
+    DataGrid = 6,
+    DocumentDownload = 11,
+    DocumentUploader = 12,
+    DropDown = 13,
+    ExpressionEditor = 14,
+    Hidden = 15,
+    Icon = 16,
+    Label = 17,
+    CheckBoxGroup = 19,
+    ListBox = 20,
+    Money = 21,
+    Decimal = 23,
+    RadioButton = 24,
+    RichText = 25,
+    Tree = 29,
+    Image = 30,
+    Form = 50,
+    Panel = 100,
+    
+    Link = 18,
+
+    Text = 26,
+
+    DateTime = 7,
+}

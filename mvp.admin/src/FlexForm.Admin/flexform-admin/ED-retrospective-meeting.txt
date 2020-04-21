@@ -1,0 +1,125 @@
+05.06-05.10
+	discussion 4h30m 
+		Kickoff
+		Planning, estimation
+		Discussion about estimates, entities, architecture
+	unplanned/problems 50m
+		Discussion + fixing Aurum VSC
+05.10
+	basic web interface 2h15m
+		Basic web ui project
+		routing
+		site basic structure
+	unplanned/problems 5h40m
+		working bootstrap on web ui 
+			bootstrap cannot be imported in css, but can be imported in scss file
+		reinstalling angular cli latest version, fixing js lib loading problem
+			must directly import "hammerjs" to polyfills.ts
+			core-js/es7/reflect import must be deleted from polyfills.ts
+05.11-05.13
+	static view for presetnation 4h30m
+		user component ui
+		entity designer basic view + user operations cell renderer + form designer
+		small ui fixes
+	unplanned/problems 0h
+		-
+05.16
+	entity editor 5h
+		entity list view
+		appsettings
+		BE-FE connection
+		entity designer (simple fields, complex fields, middle designer, basic properties)
+	unplanned/problems 5h
+		CORS now allowed
+			enabling
+		imagined a simpler entity list view functionality
+			should have do a detailed interview with Aurum
+		timestamp problem
+			talk earlier with Aurum
+		drag and drop
+			not yet
+			
+05.17-05.18
+	properties panel 0h
+		properties panel poc
+		properties panel two way binding
+	unplanned/problems 3h
+		very overestimated properties panel
+			should have think deeper about the functionality
+			didn't realized that binding need to be done between grid rownodes and class properties, imagined these are come from the backend in a list 
+		
+05.19-05.22
+	entitydefinition operations 8h
+		entitydef: save new, modify, clone, delete. complex property fields
+		entity name, field names are alphanumeric and unique, refactoring
+		properties panel dropdown element, designer mode
+		styling, entity load
+	unplanned/problems 3h
+		property values binding coused problem in all fields of operations
+		itemsource coused same problems
+
+05.23-05.24
+	drag and drop & bugfixes 9h
+		merge, integration, drag&drop
+		discussion
+		error handler service, styling, bugfixes based on discussion
+	unplanned/problems
+		-
+		
+05.25-05.28
+	major model changing + d&d 1h30
+		reintegration+testing, fixing entity definition save, reloading itemsourcedefinition, d&d fix
+	unplanned/problems 12h
+		itemsourcedefinition &itemsourceentitydefinition handling, testing all functions
+			coused by model misunderstood, must try backend operation before finishing ui models - as a proof
+		testing+debugging saving problem (modify did not work)
+		angular material cdk d&d investigation, trying lidorsystems integralui
+		d&d with a bug
+
+
+összehasonlító táblázat estimate és a valós ráfordítás kapcsán
+újra kell esztimálni a fennmaradó feladatokat
+statikus listába a propertyk
+
+hosszabb távú terv
+elgondolkodni rajta:
+	
+	form designer:
+		- milyen példákat szeretnék
+		- crud metódusok insomnián keresztül
+		- minden műveletet érteni kell
+		
+	user managment:
+		- user group
+			- kilistázni a user groupak	 (mint a form list)
+				- row detailbe a userek	 (mint a form list)
+		- users
+			- alatta felsorolni hogy milyen role-okba tartozik (mint a form list)
+		- role editor (usergroup)
+			- név - description	- létrehozás, törlés (ha van neki usere akkor nem lehet törölni)
+				- lista a userekről, hogy kik tartoznak bele és hozzá lehet adni
+		- users
+			- firstname,lastname, username(emial)
+				- lista a groupokról, hogy kik tartoznak bele és hozzá lehet adni
+				
+	login-authentikáció:
+		- nincs jelszavas login
+		- google és facebook azonosítás van
+		- 2 built in role,, ami nem jelenik meg a designerben (admin és user)
+			- gridre kell filtert tenni hogy a "DDE." kezdetű role-ok nem szerkeszthetőek (vagy meg se jelennek)
+				- pont emiatt nem kezdődhet új role "DDE."-al
+		- login: 3rd party login provider-t hogy lehet beépíteni angular-ba:
+			- cikket várok sándortól: 
+				https://fullstackmark.com/post/13/jwt-authentication-with-aspnet-core-2-web-api-angular-5-net-core-identity-and-facebook-login
+				további olvasnivaló
+					https://dejanstojanovic.net/aspnet/2018/june/token-based-authentication-in-aspnet-core-part-1/
+					https://dejanstojanovic.net/aspnet/2018/june/token-based-authentication-in-aspnet-core-part-2/
+					https://dejanstojanovic.net/aspnet/2018/june/token-based-authentication-in-aspnet-core-part-3/
+			
+	form generátor:
+		- binding nélkül
+		
+		
+mai meló:
+	retrospectiv 2h
+	fejlesztés 5h

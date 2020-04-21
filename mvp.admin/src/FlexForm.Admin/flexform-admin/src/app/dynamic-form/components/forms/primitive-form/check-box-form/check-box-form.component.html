@@ -1,0 +1,15 @@
+<div [appWrapper]="uiProperties">
+  <div [appLabel]="uiProperties">
+  </div>
+  <div [appInput]="uiProperties">
+    <div *ngIf="templateValue==visualTemplate.CheckBox">
+      <mat-checkbox [(ngModel)]="model.value"></mat-checkbox>
+    </div>
+    <div *ngIf="templateValue==visualTemplate.SwitchButton">
+      <mat-button-toggle-group [(ngModel)]="model.value" #group="matButtonToggleGroup">
+        <mat-button-toggle [value]="1">Yes</mat-button-toggle>
+        <mat-button-toggle [value]="0">No</mat-button-toggle>
+      </mat-button-toggle-group>
+    </div>
+  </div>
+</div>

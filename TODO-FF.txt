@@ -1,0 +1,31 @@
+create ikon az menjen a szöveg mellé - normal - 5m
+d&d-nál baj h eltűnik, meg kell oldani - high
+properties ablakot össze kell csukni - low prio
+save ragadjon alulra - high - 15m
+
+ha simple-ről átmegyünk complex-re, akkor jelenjen meg az itemsource üres elemmel, majd ki kell választani - ag grid problema, nem frissül a binding!! - 2h
+properites ablak frissítése, amikor törölgetve van az eleme - 15m
+type legyen elől, a név előtt, legvégén item source - 5m
+properties value vertikálisan középre - 15m
+
+betöltéskor van valami gond, nincs clearelve a dynamic.service
+hagyta elmenteni ugyanolyan néven, miután a timestamp
+
+az újonnan felrakott elem legyen selected , legyen a kiválasztott elem a selected - 20m
+editor list dupla klikkre megnyitja az entity edeitort - 15m
+mat dialog kell a hibakezelésre - 1h
+
+
+trelloba is lehet írni ezeket a todokat
+
+
+----------------------
+
+formdeflist-en nem view hanem modify
+form designeren is kell ed modify - person felirat mellé is edit gomb
+ha dirty bármilyen form, akarod menteni? yes-no-cancel - callback
+	ha átnavigálás van, akkor legyen return url a formeditorra
+	tök általános klasszikus routing esetén (valamilyen gombot nyomott meg, de url-t bemásolva ne így legyen)
+cachelni bizonyos elévüléssel a form és entity definitiont
+
+

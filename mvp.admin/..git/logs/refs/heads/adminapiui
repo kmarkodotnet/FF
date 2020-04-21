@@ -1,0 +1,78 @@
+0000000000000000000000000000000000000000 0d0d0860b57651d5cb7e2a80d7cae6f9776d86b0 K2\marko <kmarko.net@gmail.com> 1557479462 +0200	branch: Created from master
+0d0d0860b57651d5cb7e2a80d7cae6f9776d86b0 24ef2782fc8ba68628ff94347b43dac0b094bfa1 K2\marko <kmarko.net@gmail.com> 1557479510 +0200	commit: add bootstrap
+24ef2782fc8ba68628ff94347b43dac0b094bfa1 7821b8b4beeeae379106cbe23acd26d732b64863 K2\marko <kmarko.net@gmail.com> 1557479527 +0200	merge origin/master: Merge made by the 'recursive' strategy.
+7821b8b4beeeae379106cbe23acd26d732b64863 bba50e3bafc15fc952bd82fa603b28260bfc2b0d K2\marko <kmarko.net@gmail.com> 1557479584 +0200	merge origin/master: Merge made by the 'recursive' strategy.
+bba50e3bafc15fc952bd82fa603b28260bfc2b0d 1c014864ad8bd8c4d46ae11307e9262a66a92f81 K2\marko <kmarko.net@gmail.com> 1557499859 +0200	commit: admin basic app structure, empty pages
+1c014864ad8bd8c4d46ae11307e9262a66a92f81 00e0c5f833030a763f00fd3496d4165d451801e5 K2\marko <kmarko.net@gmail.com> 1557573327 +0200	commit: small refactoring on ui controls
+00e0c5f833030a763f00fd3496d4165d451801e5 c430e0fc66b6ef325e6efa462d297bcb32c96449 K2\marko <kmarko.net@gmail.com> 1557575614 +0200	commit: user list with checkbox cell renderer
+c430e0fc66b6ef325e6efa462d297bcb32c96449 44fb8ce74cf997c9d5627a7b4376be21f959c760 K2\marko <kmarko.net@gmail.com> 1557667580 +0200	commit: entity designer basic empty view with some data
+44fb8ce74cf997c9d5627a7b4376be21f959c760 d6204f1a56c267518687d7d3d34a15b80ebeb373 K2\marko <kmarko.net@gmail.com> 1557673401 +0200	commit: site logo, basic form designer, small fix on entity designer
+d6204f1a56c267518687d7d3d34a15b80ebeb373 a73c71f5cffa546877c6c7e48bc4f9df086b2ff6 K2\marko <kmarko.net@gmail.com> 1557685971 +0200	commit: small styling
+a73c71f5cffa546877c6c7e48bc4f9df086b2ff6 ff9018fe5131d87adf94157aec82cf1f1548b2f1 K2\marko <kmarko.net@gmail.com> 1557770181 +0200	commit: small design fixes
+ff9018fe5131d87adf94157aec82cf1f1548b2f1 4d7fb565206d7ef93045569fa7ffcdd3817273b4 K2\marko <kmarko.net@gmail.com> 1557987657 +0200	merge master: Merge made by the 'recursive' strategy.
+4d7fb565206d7ef93045569fa7ffcdd3817273b4 f516c349270de14ab349136a22228994a4c62745 K2\marko <kmarko.net@gmail.com> 1557996652 +0200	commit: basic entity list, empty entity details, basic routing
+f516c349270de14ab349136a22228994a4c62745 705889e12e6ce23315151a461ec7b13019d180ad K2\marko <kmarko.net@gmail.com> 1558000080 +0200	commit: ui app settings, services, models, enums
+705889e12e6ce23315151a461ec7b13019d180ad 9c975d6733c002b540f0755a37d2bc33ef64ef45 K2\marko <kmarko.net@gmail.com> 1558000606 +0200	commit: enabling CORS on BE
+9c975d6733c002b540f0755a37d2bc33ef64ef45 43c7b8f2fd25c0ae073dfc2805acd29a7d6dce57 K2\marko <kmarko.net@gmail.com> 1558004392 +0200	commit: entity definition UI + service methods
+43c7b8f2fd25c0ae073dfc2805acd29a7d6dce57 4d68a8a837e5f49ccac1becc4501a62d75e05a95 K2\marko <kmarko.net@gmail.com> 1558004407 +0200	commit: code cleanup
+4d68a8a837e5f49ccac1becc4501a62d75e05a95 2c3cbbfac56add75f4f57fe2d756da4b1d1d34d6 K2\marko <kmarko.net@gmail.com> 1558007923 +0200	commit: very basic drag and drop without copy behaviour
+2c3cbbfac56add75f4f57fe2d756da4b1d1d34d6 bf309764187cbbfae2fcda6bf27ead7fc5fa62c2 K2\marko <kmarko.net@gmail.com> 1558007936 +0200	merge origin/master: Merge made by the 'recursive' strategy.
+bf309764187cbbfae2fcda6bf27ead7fc5fa62c2 79e6b8f1e7673e08d1ea72253b46871e65d6871c K2\marko <kmarko.net@gmail.com> 1558013566 +0200	commit: ui fields + constants service
+79e6b8f1e7673e08d1ea72253b46871e65d6871c 73794d697f3c01de80cc8bba751adf9bfdc46dea K2\marko <kmarko.net@gmail.com> 1558020243 +0200	commit: entity designer list overflow, refactoring
+73794d697f3c01de80cc8bba751adf9bfdc46dea 9085450aed76908f0d6bed7ea16b5b89a0b54d6f K2\marko <kmarko.net@gmail.com> 1558025203 +0200	commit: basic properties
+9085450aed76908f0d6bed7ea16b5b89a0b54d6f 69fd51244f9a095faedc4b9cf4df97cc953b1dab K2\marko <kmarko.net@gmail.com> 1558125503 +0200	commit: properties panel poc
+69fd51244f9a095faedc4b9cf4df97cc953b1dab 944b4fcd8ef69dd678c48ef4b8d15ebcd932024b K2\marko <kmarko.net@gmail.com> 1558206456 +0200	commit: entity editor - two way value binding between grid elements and field basic properies
+944b4fcd8ef69dd678c48ef4b8d15ebcd932024b 6c93c75e8b2b9b2827e06eee1fc2eb5c8228a1a9 K2\marko <kmarko.net@gmail.com> 1558260387 +0200	commit: entity basic save, converterservice, entity designer view mode, refactoring
+6c93c75e8b2b9b2827e06eee1fc2eb5c8228a1a9 6d06757eb82c90bcefd89fc50ed57d113b8fbeef K2\marko <kmarko.net@gmail.com> 1558268893 +0200	commit (merge): delete entity definition (FK problem regarding fielddef)
+6d06757eb82c90bcefd89fc50ed57d113b8fbeef 9a289b58be45227f29aae8756ae775d4f2e1075c K2\marko <kmarko.net@gmail.com> 1558279207 +0200	commit: entity definition save, modify, clone
+9a289b58be45227f29aae8756ae775d4f2e1075c 47abd88a8cdb60b2a238944611eeac7ee29d20af K2\marko <kmarko.net@gmail.com> 1558460509 +0200	commit: alphanumeric, unique validation, dynamicservice, refactoring
+47abd88a8cdb60b2a238944611eeac7ee29d20af e74a60fdc5277e9fb490fc372a753dbbc7ff38d8 K2\marko <kmarko.net@gmail.com> 1558463287 +0200	commit: fixing properties panel dropdown element
+e74a60fdc5277e9fb490fc372a753dbbc7ff38d8 3d8877c9e3a43de830b00bf3623f369d27f30526 K2\marko <kmarko.net@gmail.com> 1558464961 +0200	commit: entity designer mode
+3d8877c9e3a43de830b00bf3623f369d27f30526 c4e5afd7e78dab48e6d7d8dff292cb8087323d64 K2\marko <kmarko.net@gmail.com> 1558549575 +0200	commit: fixing style, fixing entity def load
+c4e5afd7e78dab48e6d7d8dff292cb8087323d64 317c36c812d6c84d3ce7fe9544e6b84cb7437f9c K2\marko <kmarko.net@gmail.com> 1558635551 +0200	commit: drag and drop
+317c36c812d6c84d3ce7fe9544e6b84cb7437f9c f545d1783c1d4490b30828107d5ba4d56b9d6926 K2\marko <kmarko.net@gmail.com> 1558638439 +0200	commit: manual merge
+f545d1783c1d4490b30828107d5ba4d56b9d6926 20d1cda70f343449b5c59c91b4ebe665ce28ad33 K2\marko <kmarko.net@gmail.com> 1558640200 +0200	commit: BS &FE integration, geting, saving new ED
+20d1cda70f343449b5c59c91b4ebe665ce28ad33 837ed5e5872e628634420e5750262f523868377e K2\marko <kmarko.net@gmail.com> 1558691981 +0200	commit: error handler service, entity list operations condition on operation
+837ed5e5872e628634420e5750262f523868377e 76124b8601e87751155029711bb0f5847eeaf07d K2\marko <kmarko.net@gmail.com> 1558692006 +0200	merge master: Merge made by the 'recursive' strategy.
+76124b8601e87751155029711bb0f5847eeaf07d 53ab23f92ee1d83552e32d8f9bf0e57b055ea41b K2\marko <kmarko.net@gmail.com> 1558692915 +0200	commit: removing selected field clear properties, reordering name on designer field
+53ab23f92ee1d83552e32d8f9bf0e57b055ea41b c7d115d2fd414ac172d2e55b82ac3746c1839220 K2\marko <kmarko.net@gmail.com> 1558695942 +0200	commit: entity designer selecteditem item visualization, entity list double click trigger entity modify mode, fixing entity designer ui element selection problem
+c7d115d2fd414ac172d2e55b82ac3746c1839220 f71871a11979f0f5e09e42956a256c3aab80a8b9 K2\marko <kmarko.net@gmail.com> 1558698871 +0200	commit: styling
+f71871a11979f0f5e09e42956a256c3aab80a8b9 28b94d282fe5e1e51dc43a4c4e43b1abab277386 K2\marko <kmarko.net@gmail.com> 1558706109 +0200	commit: sticking save,done,cancel right bottom; fixing view height
+28b94d282fe5e1e51dc43a4c4e43b1abab277386 26486f2896c13d3c80a453d4b314019c642e1361 K2\marko <kmarko.net@gmail.com> 1558706163 +0200	commit: refresh grid on field major type changeing
+26486f2896c13d3c80a453d4b314019c642e1361 e95c3c825344ed3054e770ba0f692996c003b474 K2\marko <kmarko.net@gmail.com> 1558791599 +0200	commit: handling itemsourcedefinition
+e95c3c825344ed3054e770ba0f692996c003b474 02ec7979a0807fc667324978355da6a5a524e4ad K2\marko <kmarko.net@gmail.com> 1558895230 +0200	commit: d&d with a bug
+02ec7979a0807fc667324978355da6a5a524e4ad dc24c89203b0fb58ce88e6d4e95857c2ac3929c9 K2\marko <kmarko.net@gmail.com> 1559055050 +0200	merge origin/adminapi: Merge made by the 'recursive' strategy.
+dc24c89203b0fb58ce88e6d4e95857c2ac3929c9 ba8d73e0e126849bbd22b2e34fb4544df3b829bb K2\marko <kmarko.net@gmail.com> 1559057522 +0200	commit: fixing ED save
+ba8d73e0e126849bbd22b2e34fb4544df3b829bb e8cd6f5f936bc03b8cb4bc9c862b529348ba0f69 K2\marko <kmarko.net@gmail.com> 1559057560 +0200	commit: fixing on D&D, fixing itemsourcedefinition load
+e8cd6f5f936bc03b8cb4bc9c862b529348ba0f69 61e663a16760b16e970ee0cae4f0cd0340df4844 K2\marko <kmarko.net@gmail.com> 1559145701 +0200	commit: form-list basics
+61e663a16760b16e970ee0cae4f0cd0340df4844 a9ca0908dc37d2f5a6126969ba2c3c31b6636c98 K2\marko <kmarko.net@gmail.com> 1559147016 +0200	commit: form list routing to form editor
+a9ca0908dc37d2f5a6126969ba2c3c31b6636c98 953072d8ec7dd7c6197842c4cc099fe32fa17ccb K2\marko <kmarko.net@gmail.com> 1559163741 +0200	commit: creating formdef models, refactoring
+953072d8ec7dd7c6197842c4cc099fe32fa17ccb dcd3c3a923912239ac5f1aa256fadc0d933b588d K2\marko <kmarko.net@gmail.com> 1559218948 +0200	commit: form elements list - loading entity fields
+dcd3c3a923912239ac5f1aa256fadc0d933b588d 571e34f4566f8ed6c846e7d1bd887d30f64b6c6c K2\marko <kmarko.net@gmail.com> 1559218962 +0200	merge origin/adminapi: Merge made by the 'recursive' strategy.
+571e34f4566f8ed6c846e7d1bd887d30f64b6c6c d16add3f29755fe8430922c9b8f7aae925456df1 K2\marko <kmarko.net@gmail.com> 1559231669 +0200	merge origin/adminapi: Merge made by the 'recursive' strategy.
+d16add3f29755fe8430922c9b8f7aae925456df1 8f9c88b5a4e108139156d8877cb93566bcea228f K2\marko <kmarko.net@gmail.com> 1559234224 +0200	merge origin/adminapi: Merge made by the 'recursive' strategy.
+8f9c88b5a4e108139156d8877cb93566bcea228f fc8fd8a57166fc00914f1ae68432528e9bd0cad8 K2\marko <kmarko.net@gmail.com> 1559241936 +0200	commit: form editor styling, form editor operations basic
+fc8fd8a57166fc00914f1ae68432528e9bd0cad8 ef9c74afced344a464d893cc528290a2d06af0f0 K2\marko <kmarko.net@gmail.com> 1559245798 +0200	commit: formdefinition save examples, loading entity definition's form definitions
+ef9c74afced344a464d893cc528290a2d06af0f0 a6efd824da1c20bf6e027e498025b3ff8b4515fa K2\marko <kmarko.net@gmail.com> 1559373505 +0200	commit: reload saved formdefinition, converting
+a6efd824da1c20bf6e027e498025b3ff8b4515fa bdc7b1ff762de315c75261bca8e9bb5ca0e047ab K2\marko <kmarko.net@gmail.com> 1559414410 +0200	commit: form control properties
+bdc7b1ff762de315c75261bca8e9bb5ca0e047ab b162e7290427c536ed428dc8700d0ab2f107091e K2\marko <kmarko.net@gmail.com> 1559472270 +0200	commit: form definition properties, field type - display type compatibility
+b162e7290427c536ed428dc8700d0ab2f107091e edb2ff8308f8e38509ce0e5e923356b5a25b334c K2\marko <kmarko.net@gmail.com> 1559472317 +0200	commit: selected form control
+edb2ff8308f8e38509ce0e5e923356b5a25b334c bf5e769b74c1842db9d44cfb01f8b1b7e9127a99 K2\marko <kmarko.net@gmail.com> 1559507431 +0200	commit: saving formdefinition
+bf5e769b74c1842db9d44cfb01f8b1b7e9127a99 8c85415f90da8f5691c241559062d8879d2cb628 K2\marko <kmarko.net@gmail.com> 1559595621 +0200	commit: form &entity definition properties, saving properties
+8c85415f90da8f5691c241559062d8879d2cb628 26442aefabd8f26d00b8ba4838fd925479585a9d K2\marko <kmarko.net@gmail.com> 1559736050 +0200	commit: checkbox property binding, form editor d&d, form editor properties, form delete
+26442aefabd8f26d00b8ba4838fd925479585a9d 65c5f3150e1705f3773a9da1da49361f1d0fcb94 K2\marko <kmarko.net@gmail.com> 1559736070 +0200	merge origin/master: Merge made by the 'recursive' strategy.
+65c5f3150e1705f3773a9da1da49361f1d0fcb94 e6729aef490a6fda2dae2f09a36876c93625599b K2\marko <kmarko.net@gmail.com> 1560153132 +0200	commit: proeprty name constants; element property services
+e6729aef490a6fda2dae2f09a36876c93625599b 999f455813a7e32cd2321ff18eba089011457df9 K2\marko <kmarko.net@gmail.com> 1560170584 +0200	commit: property service factory; ag grid property change mechanism
+999f455813a7e32cd2321ff18eba089011457df9 dfa9c9d897d93ab23a06f5aaf4730cce5459dba9 K2\marko <kmarko.net@gmail.com> 1560280019 +0200	commit: backward propagation of ui property changes
+dfa9c9d897d93ab23a06f5aaf4730cce5459dba9 4e3d749c1789f2db12543909e2ccc0502fe712fc K2\marko <kmarko.net@gmail.com> 1560421372 +0200	commit: label text, label horizontal position, label vertical position added on every binding element
+4e3d749c1789f2db12543909e2ccc0502fe712fc 0466b39c95ef4b8c42be88b3f2127aed83016bde K2\marko <kmarko.net@gmail.com> 1560443468 +0200	commit: user management basic models
+0466b39c95ef4b8c42be88b3f2127aed83016bde e947061ca0e97c75b9206fbc10d682e51dceb9f7 K2\marko <kmarko.net@gmail.com> 1560443523 +0200	merge origin/adminapi: Merge made by the 'recursive' strategy.
+e947061ca0e97c75b9206fbc10d682e51dceb9f7 2adbb37a71358665d301edd16aea3ee6ed7538e1 K2\marko <kmarko.net@gmail.com> 1561024063 +0200	commit: user-usergroup management
+2adbb37a71358665d301edd16aea3ee6ed7538e1 4ff1de6babdec262aeb59826ccf298b25a764934 K2\marko <kmarko.net@gmail.com> 1561024113 +0200	commit: nonbinding properties service
+4ff1de6babdec262aeb59826ccf298b25a764934 e3b337472b195ef15f5187abb5e5a6cbe8e68858 K2\marko <kmarko.net@gmail.com> 1561031439 +0200	commit: adding dispalyvalue to constantproperty; checking if formname is unique; fixing form designer ui bug;
+e3b337472b195ef15f5187abb5e5a6cbe8e68858 5e9a80183dbd4f9cd968959e0a61d1a67a54e318 K2\marko <kmarko.net@gmail.com> 1561038155 +0200	commit: formdefinition isDirty, dirty warning component
+5e9a80183dbd4f9cd968959e0a61d1a67a54e318 4fbefadcfee7d8fdb8cf40eb6d5a13e833d4f2bb K2\marko <kmarko.net@gmail.com> 1561044177 +0200	commit: formdefinition cache
+4fbefadcfee7d8fdb8cf40eb6d5a13e833d4f2bb e4b62e30abe562521fd163a78bfa058787bffb6d K2\marko <kmarko.net@gmail.com> 1561111883 +0200	commit: form editor is dirty
+e4b62e30abe562521fd163a78bfa058787bffb6d a1c43b1738237d97fd1e6aae76a8407b0fccb120 K2\marko <kmarko.net@gmail.com> 1561112064 +0200	commit: caching on entity editor, form editor
+a1c43b1738237d97fd1e6aae76a8407b0fccb120 b9e933658c7f0a10ad8e862f720c547fa9af7281 K2\marko <kmarko.net@gmail.com> 1561114192 +0200	commit: unique form control names
+b9e933658c7f0a10ad8e862f720c547fa9af7281 35645f8607f01981b9ae7ab235734ecc278a0661 K2\marko <kmarko.net@gmail.com> 1561123328 +0200	commit: google & facebook auth

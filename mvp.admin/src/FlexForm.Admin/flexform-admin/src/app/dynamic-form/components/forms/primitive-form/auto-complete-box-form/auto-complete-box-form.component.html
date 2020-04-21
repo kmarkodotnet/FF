@@ -1,0 +1,18 @@
+<div [appWrapper]="uiProperties">
+  <div [appLabel]="uiProperties">
+  </div>
+  <div [appInput]="uiProperties">
+    <form class="auto-complete-box-form">
+      <mat-form-field class="auto-complete-box-form-full-width">
+        <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="autoCompleteBoxForm" [matAutocomplete]="auto">
+        <mat-autocomplete #auto="matAutocomplete">
+          <!-- <mat-option *ngFor="let data of dataList | async" [value]="data"> -->
+          <mat-option *ngFor="let data of (filteredOptions|async) " [value]="data">
+              <!-- [value]="getDisplayText(data)" -->
+            {{data}}
+          </mat-option>
+        </mat-autocomplete>
+      </mat-form-field>
+    </form>
+  </div>
+</div>

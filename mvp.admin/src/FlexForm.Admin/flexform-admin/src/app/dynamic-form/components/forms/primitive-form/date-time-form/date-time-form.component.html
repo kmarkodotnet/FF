@@ -1,0 +1,22 @@
+<div [appWrapper]="uiProperties">
+  <div [appLabel]="uiProperties">
+  </div>
+  <div *ngIf="templateValue==visualTemplate.DatePicker || templateValue==visualTemplate.DateTimePicker">
+    <mat-form-field>
+      <input matInput [matDatepicker]="picker" placeholder="Choose a date"  [appInput]="uiProperties"  [(ngModel)]="model.value">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>  
+  <div *ngIf="templateValue==visualTemplate.DateBox || templateValue==visualTemplate.DateTimeBox">
+    <mat-form-field>
+      <input matInput type="date" [appInput]="uiProperties">
+    </mat-form-field>
+  </div>
+  <div *ngIf="templateValue==visualTemplate.TimeBox || templateValue==visualTemplate.DateTimeBox">
+    <mat-form-field>
+      <input matInput type="time" [appInput]="uiProperties">
+    </mat-form-field>
+  </div>
+  
+</div>

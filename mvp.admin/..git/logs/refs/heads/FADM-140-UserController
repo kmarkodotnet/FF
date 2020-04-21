@@ -1,0 +1,2 @@
+0000000000000000000000000000000000000000 77c29c08679755a1e4b32c530a6f31be5e0eb570 K2\marko <kmarko.net@gmail.com> 1565122607 +0200	branch: Created from adminapiui-dynaform
+77c29c08679755a1e4b32c530a6f31be5e0eb570 900029d3e0e70e2b97633d39addaf2ea1e2ec640 K2\marko <kmarko.net@gmail.com> 1565122692 +0200	commit: FADM-140 - angular userservice modification regarding backend modification, modify backend controller http send mode and endpoint, modify save logic

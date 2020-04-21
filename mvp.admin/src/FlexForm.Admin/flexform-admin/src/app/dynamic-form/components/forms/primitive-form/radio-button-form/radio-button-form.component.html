@@ -1,0 +1,9 @@
+<div [appWrapper]="uiProperties">
+  <div [appLabel]="uiProperties">
+  </div>
+  <div [appInput]="uiProperties">
+    <mat-radio-group aria-label="Select an option" class="row">
+      <mat-radio-button class="col-12" *ngFor="let data of dataList" [value]="data">{{getDisplayText(data)}}</mat-radio-button>
+    </mat-radio-group>
+  </div>
+</div>

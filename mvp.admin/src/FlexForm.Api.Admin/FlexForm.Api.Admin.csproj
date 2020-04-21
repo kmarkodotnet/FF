@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.2</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.0.0.0</Version>
+    <FileVersion>0.0.1.0</FileVersion>
+    <Authors>FlexForm</Authors>
+    <Description>FlexForm API Admin</Description>
+    <Copyright>Copyright ©  2019 FlexForm</Copyright>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="sentences.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
+    <PackageReference Include="NetAppDev.Composition" Version="1.1.6" />
+    <PackageReference Include="Unity" Version="5.11.1" />
+    <PackageReference Include="NetAppDev.Server.Core" Version="1.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FlexForm.Api.Admin.DataAccess\FlexForm.Api.Admin.DataAccess.csproj" />
+    <ProjectReference Include="..\FlexForm.Api.Common\FlexForm.Api.Common.csproj" />
+    <ProjectReference Include="..\FlexForm.DDE.Common\FlexForm.DDE.Common.csproj" />
+    <ProjectReference Include="..\FlexForm.DDE.Data\FlexForm.DDE.Data.csproj" />
+    <ProjectReference Include="..\FlexForm.Identity.Common\FlexForm.Identity.Common.csproj" />
+  </ItemGroup>
+</Project>

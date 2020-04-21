@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 c3b2df43e64ba981fb4ac1c48ddfea595b38649d K2\marko <kmarko.net@gmail.com> 1562950192 +0200	branch: Created from adminapiui-dynaform
+c3b2df43e64ba981fb4ac1c48ddfea595b38649d 9b23ff2b5794a0efbbeebe535c938fc9d1f51112 K2\marko <kmarko.net@gmail.com> 1562950443 +0200	commit: icon
+9b23ff2b5794a0efbbeebe535c938fc9d1f51112 c40df198d983eff25cb599baf8d70d121f7023e0 K2\marko <kmarko.net@gmail.com> 1562950517 +0200	merge origin/master: Merge made by the 'recursive' strategy.
+c40df198d983eff25cb599baf8d70d121f7023e0 be234d59e4b42e7f2670cdfa5d2a184abfa6e015 K2\marko <kmarko.net@gmail.com> 1562952160 +0200	commit: image and form components
+be234d59e4b42e7f2670cdfa5d2a184abfa6e015 0e8a171a801be376afa23f707c21dc734693cc77 K2\marko <kmarko.net@gmail.com> 1562962363 +0200	commit: changing form display type resolver

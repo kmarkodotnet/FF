@@ -1,0 +1,10 @@
+<div [appWrapper]="uiProperties">
+  <div *ngIf="templateValue==visualTemplate.LinkButton">
+    <input type="button" [appInput]="uiProperties"
+      value="ButtonText"
+      onclick="location.href='~'" />
+  </div>
+  <div *ngIf="templateValue==visualTemplate.LinkText">
+      <a href="https://stackoverflow.com/" [appInput]="uiProperties">ButtonText</a>
+  </div>
+</div>

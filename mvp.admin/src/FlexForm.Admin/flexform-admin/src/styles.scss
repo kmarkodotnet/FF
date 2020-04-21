@@ -1,0 +1,129 @@
+
+//TODO MK: letöltés helyett be kellene húzni
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+@import '~bootstrap/scss/bootstrap'; 
+
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid'; 
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
+// setting mat list item container height and default style
+.entity-editor-container-entity-designer .mat-list-base .mat-list-item{
+    height: 1.5em !important;
+
+    border:1px;
+    border-style: solid;
+    margin: 5px;
+    border-color: #000000;
+}
+.entity-editor-container-fields .mat-list-base .mat-list-item{
+    height: 1.5em !important;
+    
+    border:1px;
+    border-style: solid;
+    margin: 5px;
+    border-color: #000000;
+}
+// setting mat list item container height and default style
+
+
+// .router-outlet-content{
+//     border: 1px;
+//     border-color: #f3f3f3;
+//     border-style: solid;
+// }
+
+// styling properties panel
+.entity-editor-container-properties .ag-theme-balham{
+    padding-top: 13px;
+    padding-right: 10px;
+}
+
+// setting margin on main operations container
+.save-done-cancel-container{
+    margin: 10px !important;
+
+    position: absolute;
+    right: 15px;
+    bottom: 0px;
+}
+
+
+// entity designer height fix
+.entity-editor-container-entity-designer .mat-list-base{
+    height: 100%;
+}
+
+// entity designer mat-list-item ui element width restriction
+.entity-editor-container-entity-designer .mat-list-item{
+    width: 95% !important;
+}
+
+// info button disabled state style correction
+.btn-info.disabled, .btn-info:disabled {
+    color: #000000;
+    background-color: #9ba8aa;
+    border-color: #9ba8aa;
+}
+// overriding success button style
+.btn-success{
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+// success button disabled state style correction
+.btn-success.disabled, .btn-success:disabled {
+    color: #000000;
+    background-color: #9ba8aa;
+    border-color: #9ba8aa;
+}
+
+// disabling mat form field default top padding
+.entity-editor-container-properties .p-3{
+    padding: 1px !important;
+}
+
+// fixing mat list item P-3 click problem
+.entity-editor-container-fields .p-3{
+    padding: 1px !important;
+}
+.entity-editor-container-entity-designer .p-3{
+    padding: 1px !important;
+}
+// fixing mat list item P-3 click problem
+
+.mat-form-field-infix{
+    border-top-width: 0px !important;
+}
+
+// no underline in properties panel on mat form elements (like textbox)
+.entity-editor-container-properties .mat-form-field-appearance-legacy .mat-form-field-underline{
+    background-color: rgba(0,0,0,.0) !important; 
+}
+
+// form list expansion panel style upgrade
+.form-list-container .mat-expansion-panel:not([class*=mat-elevation-z]){
+    box-shadow: none;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    border:1px;
+    border-style: solid;
+    margin: 5px;
+    margin-top: 15px;
+    background: #9ba8aa;
+    border-color: #000000;
+}
+
+
+.user-group-field .mat-form-field-wrapper{
+    width: 100% !important;
+}
+
+.user-field .mat-form-field-wrapper{
+    width: 100% !important;
+}

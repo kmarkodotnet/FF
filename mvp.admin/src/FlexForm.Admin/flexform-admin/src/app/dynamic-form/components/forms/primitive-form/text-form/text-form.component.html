@@ -1,0 +1,10 @@
+<div [appWrapper]="uiProperties">
+  <div [appLabel]="uiProperties">
+  </div>
+  <div *ngIf="templateValue==visualTemplate.SingleLineText">
+    <input type="text" [appInput]="uiProperties" [(ngModel)]="model.value">
+  </div>
+  <div *ngIf="templateValue==visualTemplate.MultiLineText">
+    <textarea type="text" [appInput]="uiProperties" [(ngModel)]="model.value"></textarea>
+  </div>
+</div>

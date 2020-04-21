@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="">
+    <h2>entity definition list</h2>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-action col-12" 
+        *ngFor="let entityDefinition of entityDefinitions"
+        [class.active]="entityDefinition === selectedEntityDefinition"
+        (click)="onSelectEntityDefinition(entityDefinition)">
+        {{entityDefinition.name}}
+      </li>
+    </ul>
+  </div>
+
+  <div *ngIf="selectedEntityDefinition" class="">
+    <h2>entity instance list</h2>
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-action col-12" 
+        [class.active]="selectedEntityInstance && entityInstance.id === selectedEntityInstance.id" 
+        *ngFor="let entityInstance of entityInstances"
+        (click)="onSelectEntityInstance(entityInstance)">
+        {{getEntityInstanceJSON(entityInstance)}}
+
+      </li>
+    </ul>
+    <button (click)="onNewClicked()" class="btn btn-primary" type="button">New</button>
+  </div>
+
+  <div *ngIf="selectedEntityInstance || newClicked" class="">
+    <h2>form definition list</h2>
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-action col-12" *ngFor="let formDefinition of formDefinitions"
+        [class.active]="formDefinition === selectedFormDefinition"
+        (click)="onSelectFormDefinition(formDefinition)">
+        {{formDefinition.title}}
+        <br>
+      </li>
+    </ul>
+  </div>
+
+  <ng-template appFormHost></ng-template>
+
+  <div *ngIf="selectedFormDefinition" class="">
+    <button [disabled]="!isValid()" (click)="onSaveClicked()" class="btn btn-primary" type="submit">Save</button>
+    <button (click)="onCancelClicked()" class="btn" type="button">Cancel</button>
+  </div>
+</div>

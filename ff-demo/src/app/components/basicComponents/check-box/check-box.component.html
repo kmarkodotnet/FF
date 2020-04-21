@@ -1,0 +1,8 @@
+<div class="d-flex {{labelPosition}} {{labelHAlignment}}" data-toggle="tooltip" title="{{getTooltip()}}">
+    <div class="p-2 {{labelPositionOrderLabel}}" *ngIf="model && model.formElement">
+        {{model.formElement.labelText}}
+    </div>
+    <div class="p-2 {{labelPositionOrderInput}} {{labelPosition}}">
+        <input type="checkbox" class="" [(ngModel)]="model.modifiedValue">  
+    </div>
+</div>

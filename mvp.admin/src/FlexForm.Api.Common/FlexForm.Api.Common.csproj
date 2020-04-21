@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netcoreapp2.2</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>0.0.0.0</Version>
+    <FileVersion>0.0.1.0</FileVersion>
+    <Authors>FlexForm</Authors>
+    <Description>FlexForm API Common</Description>
+    <Copyright>Copyright ©  2019 FlexForm</Copyright>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="3.10.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="2.2.0" />
+    <PackageReference Include="NetAppDev.Common" Version="1.1.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FlexForm.DDE.Common\FlexForm.DDE.Common.csproj" />
+    <ProjectReference Include="..\FlexForm.DDE.Data\FlexForm.DDE.Data.csproj" />
+    <ProjectReference Include="..\FlexForm.DDE.Data.Entity\FlexForm.DDE.Data.Entity.csproj" />
+    <ProjectReference Include="..\FlexForm.Identity.Common\FlexForm.Identity.Common.csproj" />
+  </ItemGroup>
+</Project>

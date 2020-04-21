@@ -1,0 +1,11 @@
+<div class="combo-container"  [appWrapper]="uiProperties">
+    <div [appLabel]="uiProperties">
+    </div>
+    <div [appInput]="uiProperties">
+      <select>
+        <option *ngFor="let data of dataList">
+          {{getDisplayText(data)}}
+        </option>
+      </select>
+    </div>
+  </div>

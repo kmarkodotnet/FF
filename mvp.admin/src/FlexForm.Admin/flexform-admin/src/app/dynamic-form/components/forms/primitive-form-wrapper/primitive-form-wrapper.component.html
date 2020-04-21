@@ -1,0 +1,9 @@
+<div [ngClass]="{ 'border border-dark rounded item-hover': isRootChild() }" [class.selected]="isSelected" class="row">
+  <div class="w-80 p-3" [ngClass]="(isRootChild())?'col-11':'col-12'" (click)="clicked(null)">
+    {{wrapperText}}
+    <ng-template appFormHost></ng-template>
+  </div>
+  <div *ngIf="isRootChild()" class="w-20 p-3 col-1 text-right align-top">
+      <i class="fas fa-times" (click)="removed()"></i>
+  </div>
+</div>

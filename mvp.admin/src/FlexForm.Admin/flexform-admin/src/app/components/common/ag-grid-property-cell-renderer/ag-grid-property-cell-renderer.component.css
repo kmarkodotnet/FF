@@ -1,0 +1,8 @@
+.input-is-valid{
+    color: black;
+    font-weight: normal;
+}
+.input-is-invalid{
+    color: red;
+    font-weight: bold;
+}

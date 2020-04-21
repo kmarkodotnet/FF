@@ -1,0 +1,27 @@
+<!-- <app-dynamic-form-host #host></app-dynamic-form-host> -->
+
+<!-- <app-facebook-login></app-facebook-login>
+ <app-google-login></app-google-login> -->
+<app-identity></app-identity>
+   <mat-toolbar>
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <div class="">
+                            <img src="../../../assets/ff_logo_1.png" routerLink='' alt="" height="42" width="42">
+                            <button class="col-2" mat-button routerLink='entities' id="entities">Entity designer</button>
+                            <button class="col-2" mat-button routerLink='forms' id="form">Form designer</button>
+                            <button class="col-2" mat-button routerLink='users' id="users">Users</button>
+                    </div>
+                </div>
+                <div class="col-2 text-right">
+                    <div>
+                        Test user<i class="fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-toolbar>
+<div class="router-outlet-content">
+  <router-outlet></router-outlet>
+</div> 

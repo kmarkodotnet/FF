@@ -1,0 +1,23 @@
+.chk-input {
+    display: block;
+    margin: auto;
+    width: 40%;
+  }
+  
+  mat-checkbox {
+    //color: rgb(91,192,222)!important;
+    /deep/ .mat-checkbox-background {
+        background-color: rgb(91,192,222)!important;
+    }
+  
+    // /deep/ &.md-checkbox-focused{
+    //     .mat-ink-ripple{
+    //         background-color: rgba(91,192,222, .26)!important;
+    //     }
+    // }
+  }
+  
+  // mat-checkbox.mat-default-theme.mat-checked .mat-icon {
+  //     background: rgb(91,192,222);
+  //   }
+  

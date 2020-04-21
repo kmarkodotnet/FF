@@ -1,0 +1,14 @@
+<div class="list-box-container"  [appWrapper]="uiProperties">
+  <div [appLabel]="uiProperties">
+  </div>
+  <div [appInput]="uiProperties">
+    <div *ngIf="itemsDictionary">
+      <div *ngFor="let data of itemsDictionary" [class.selected]="data.value" class="list-box-item row">
+          <input type="checkbox" value="data.value" class="col-2">
+          <div *ngIf="data.key"  (click)="itemClicked(data)" class="col-10">
+              {{getDisplayText(data.key)}}
+          </div>
+      </div>      
+    </div>
+  </div>
+</div>

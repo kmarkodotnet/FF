@@ -1,0 +1,12 @@
+<div class="container">
+
+  <div *ngIf="modifyUserIsVisible()" [class]="cssClass" (click)="modifyUser()">
+      <!-- <button class="col-2" mat-button routerLink='user' id="user"></button> -->
+        <i class="fas fa-user-edit"></i>
+  </div>
+      
+  <div *ngIf="deleteUserIsVisible()" [class]="cssClass" (click)="deleteUser()">
+    <i class="fas fa-times"></i>
+  </div>
+
+</div>

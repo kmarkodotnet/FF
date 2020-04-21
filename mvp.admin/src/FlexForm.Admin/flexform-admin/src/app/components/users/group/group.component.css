@@ -1,0 +1,17 @@
+.user-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5vh;
+  }
+  
+  /* .user-container > * {
+    width: 50vw;
+  } */
+
+  .user-wrapper{
+    width: 100%;   
+  }
+
+  .error{
+    color: red;
+  }

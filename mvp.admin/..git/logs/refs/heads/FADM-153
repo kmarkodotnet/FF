@@ -1,0 +1,22 @@
+0000000000000000000000000000000000000000 0eb3a83c1a7d86f4310b479d63ed8d5b9da40af0 K2\marko <kmarko.net@gmail.com> 1563622538 +0200	branch: Created from adminapiui-dynaform
+0eb3a83c1a7d86f4310b479d63ed8d5b9da40af0 e31ab6c525e6104345844f1e306bb1e27fd4234b K2\marko <kmarko.net@gmail.com> 1563622576 +0200	commit: entity instance service interface
+e31ab6c525e6104345844f1e306bb1e27fd4234b d49215804a5919d900774188df7e97c612a2a0df K2\marko <kmarko.net@gmail.com> 1563625882 +0200	merge adminapiui-dynaform: Merge made by the 'recursive' strategy.
+d49215804a5919d900774188df7e97c612a2a0df 3fdd79570fc25059d9f606a7b041d18e9edf2bf6 K2\marko <kmarko.net@gmail.com> 1563628550 +0200	commit: reading test data basics
+3fdd79570fc25059d9f606a7b041d18e9edf2bf6 8bb0cbfdfdb1e4918efcd9dd60441b963db2cc83 K2\marko <kmarko.net@gmail.com> 1563699248 +0200	commit: testdata
+8bb0cbfdfdb1e4918efcd9dd60441b963db2cc83 aff1a0b3c45fc6ab6ba41d8e654b55fcd59c724d K2\marko <kmarko.net@gmail.com> 1563699327 +0200	commit: small fix
+aff1a0b3c45fc6ab6ba41d8e654b55fcd59c724d 6802ca492303c26ffa0c8b4fb25864510099e699 K2\marko <kmarko.net@gmail.com> 1563704607 +0200	commit: fixes
+6802ca492303c26ffa0c8b4fb25864510099e699 0a3899b3cfb273f9e0ac21401e60ee2e33978488 K2\marko <kmarko.net@gmail.com> 1563705566 +0200	commit: fix
+0a3899b3cfb273f9e0ac21401e60ee2e33978488 8c21c88e3cae119e5c7caff233bf776251a23875 K2\marko <kmarko.net@gmail.com> 1563711481 +0200	commit: controllers
+8c21c88e3cae119e5c7caff233bf776251a23875 a03228a2789d711c366d50c98ff18318046650b8 K2\marko <kmarko.net@gmail.com> 1563737525 +0200	commit: some values binded
+a03228a2789d711c366d50c98ff18318046650b8 23c1ca3a915f40e57ebcad8ed6f0cd46cf008b96 K2\marko <kmarko.net@gmail.com> 1564124307 +0200	commit: containerform detection logic change
+23c1ca3a915f40e57ebcad8ed6f0cd46cf008b96 9f3721e97f706c413db222832805a682e6476ebf K2\marko <kmarko.net@gmail.com> 1564124459 +0200	merge origin/master: Merge made by the 'recursive' strategy.
+9f3721e97f706c413db222832805a682e6476ebf b1a654c1feb2ffa6f6a49870f00c64988f364e6b K2\marko <kmarko.net@gmail.com> 1564124481 +0200	merge adminapiui-dynaform: Merge made by the 'recursive' strategy.
+b1a654c1feb2ffa6f6a49870f00c64988f364e6b 10e57816e0f05a21c19d820e901bd403ba10789d K2\marko <kmarko.net@gmail.com> 1564129888 +0200	commit: itemsoruceservice
+10e57816e0f05a21c19d820e901bd403ba10789d 69dc4edea8bf08c6fa069480c656d16cda52c64a K2\marko <kmarko.net@gmail.com> 1564143094 +0200	commit: itemsourceservice
+69dc4edea8bf08c6fa069480c656d16cda52c64a b3ca74e417b1d7dedd74cf0adc5c6882bb5789d5 K2\marko <kmarko.net@gmail.com> 1564149926 +0200	commit: ed upgrade for pagesize etc
+b3ca74e417b1d7dedd74cf0adc5c6882bb5789d5 b8fd8eaa701d3f82a666f15e79d009ff8b1baffb K2\marko <kmarko.net@gmail.com> 1564150892 +0200	commit: ed immediate binding
+b8fd8eaa701d3f82a666f15e79d009ff8b1baffb 7a26996033dafca76e590b484aaeed6b9e9278b0 K2\marko <kmarko.net@gmail.com> 1564172957 +0200	commit: working combobox
+7a26996033dafca76e590b484aaeed6b9e9278b0 0a6363fc1b83d9d0347b0cb9f4e229fc14fb425a K2\marko <kmarko.net@gmail.com> 1564175177 +0200	commit: fixing DI
+0a6363fc1b83d9d0347b0cb9f4e229fc14fb425a f4b8868b60c12b25f6c7f98a8eac28fdd9a1b399 K2\marko <kmarko.net@gmail.com> 1564176271 +0200	commit: listbox basics
+f4b8868b60c12b25f6c7f98a8eac28fdd9a1b399 ab8ab51d2e9abfb4341dd58857b3ad6e218ae634 K2\marko <kmarko.net@gmail.com> 1564222371 +0200	commit: dropdown + basic listbox
+ab8ab51d2e9abfb4341dd58857b3ad6e218ae634 6df54e3b43480f8f2fd4095c8bda4efd53b0b6b4 K2\marko <kmarko.net@gmail.com> 1564235900 +0200	commit: dropdown, comobox, istboc - common ancestor;

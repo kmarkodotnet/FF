@@ -1,0 +1,52 @@
+<!-- 
+    <div *ngIf="isCollection">
+        <div *ngIf="agGridPropertyType == agGridPropertyTypes.DropDown">
+
+        </div>
+    </div>
+</div> -->
+<!-- <div *ngIf="!isReadonly()"> -->
+<div >
+    <div *ngIf="!isCollection" >
+            <div *ngIf="agGridPropertyType === agGridPropertyTypes.Constant">
+                <mat-form-field>
+                    <input matInput [(ngModel)]="context.displayValue" disabled> 
+                </mat-form-field>
+            </div>
+            <div *ngIf="agGridPropertyType === agGridPropertyTypes.CheckBox">
+                <input type="checkbox" [(ngModel)]="context.value" (ngModelChange)="onCheckBoxChanged()" [disabled]="isReadonly()"> 
+            </div>
+            <div *ngIf="agGridPropertyType === agGridPropertyTypes.Number">
+                <input type="number" [(ngModel)]="context.value" (ngModelChange)="onNumberChanged()" [disabled]="isReadonly()">
+            </div>
+            <div *ngIf="agGridPropertyType === agGridPropertyTypes.Text" >
+                <mat-form-field>
+                    <input *ngIf="this.context.name!=propertyNameConstants.NAME" (keyup)="onKey($event)" [disabled]="isReadonly()" [ngClass]="(isValid==true)?'input-is-valid':'input-is-invalid'" matInput [(ngModel)]="context.value" (ngModelChange)="onTextChange()">
+                    <input *ngIf="this.context.name==propertyNameConstants.NAME" (keyup)="onKey($event)" [disabled]="isReadonly()" [ngClass]="(isValid==true)?'input-is-valid':'input-is-invalid'" matInput [(ngModel)]="context.value" (ngModelChange)="onTextChange()" alphaNumericCharacter>
+                </mat-form-field>
+            </div>
+        </div> 
+        <div *ngIf="isCollection">
+            <div *ngIf="agGridPropertyType == agGridPropertyTypes.DropDown">
+                <mat-form-field *ngIf="!isReadonly()" >
+                    <mat-select [(ngModel)]="context.value" (ngModelChange)="onDropdownChanged()" >
+                        <mat-option *ngFor="let element of context.elements" [value]="element.id" >
+                        {{element.name}}
+                        </mat-option>
+                    </mat-select>
+                    <!-- <mat-select *ngIf="isReadOnly()" [(ngModel)]="context.value" (ngModelChange)="onDropdownChanged()">
+                            <mat-option *ngFor="let element of context.elements" [value]="element.id" disabled>
+                            {{element.name}}
+                            </mat-option>
+                        </mat-select> -->
+                    </mat-form-field>
+                    <mat-form-field *ngIf="isReadonly()" >
+                            <mat-select [(ngModel)]="context.value" (ngModelChange)="onDropdownChanged()">
+                                <mat-option *ngFor="let element of context.elements" [value]="element.id" disabled>
+                                {{element.name}}
+                                </mat-option>
+                            </mat-select>
+                            </mat-form-field>
+            </div>
+        </div>
+</div>

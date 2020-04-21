@@ -1,0 +1,13 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+.selected{
+    background-color: grey !important;
+}
+
+.list-box-item{
+    border-width: 1px;
+    border-style: solid;
+    background-color: lightgray;
+}

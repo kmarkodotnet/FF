@@ -1,0 +1,19 @@
+Form editor:
+	- fields are defined in Entity Definition fields are visible
+	- nonbindings are visible		
+	- Form definition can be saved, reloaded, cloned, viewed
+	- D&D
+	- FD right icon	as an alternative add
+	- FD delete icon
+	- Form definition properties available when clicked on white field, but not on form control
+	- Selected Formcontrol is highlighted
+	- Field type - display type compatibility
+	- Form control properties are depends on display type	
+	- Form control properties' immidiate binding (like form control label)
+	- checking form control is dirty
+	- validation message in a popup when form control is dirty
+User/group:
+	- create user/group
+	- view user/group
+	- add/remove group/user
+	- validate group name

@@ -1,0 +1,112 @@
+<div class="row entity-editor-container">
+    <div class="col-3 entity-editor-container-element entity-editor-container-fields" *ngIf="entityDesignerMode != entityDesignerModes.View">
+            <div class="w-100 p-3 h-100 d-inline-block">
+                    <mat-expansion-panel [expanded]="simplePanelOpenState" >
+                        <mat-expansion-panel-header>
+                          <mat-panel-title>
+                            Simple fields
+                          </mat-panel-title>
+                        </mat-expansion-panel-header>        
+                        <mat-list id="simpleFields" 
+                            cdkDropListConnectedTo="designerFields" 
+                            cdkDropList 
+                            [cdkDropListData]="simpleFields"                        
+                        >
+                        <!-- (cdkDropListEntered)="dropListEntered($event)" -->
+                        
+                            <!-- (cdkDropListDropped)="drop1($event)" -->
+                            <mat-list-item cdkDrag [cdkDragData]='data'
+                              [style.background]="(data)?data.color:'white'"
+                              class="border border-dark"
+                              *ngFor="let data of simpleFields"
+                            >
+                                <div class="w-80 p-3 col-11">
+                                    {{data.name}}
+                                </div>                
+                                <div class="w-20 p-3 col-1 text-right" (click)="addSimpleFieldToDesignerFields(data,-1)">
+                                    <i class="fas fa-caret-right"></i>
+                                </div>
+                             </mat-list-item>
+                        </mat-list>        
+                      </mat-expansion-panel>
+                
+                      <mat-expansion-panel [expanded]="complexPanelOpenState" >
+                          <mat-expansion-panel-header>
+                            <mat-panel-title>
+                              Complex fields
+                            </mat-panel-title>
+                          </mat-expansion-panel-header>          
+                        <mat-list id="complexFields" 
+                            cdkDropListConnectedTo="designerFields" 
+                            cdkDropList >
+                                <!-- (cdkDropListDropped)="drop2($event)" -->
+                              <mat-list-item cdkDrag [cdkDragData]='data'
+                                [style.background]="(data)?data.color:'white'"
+                                class="border border-dark"
+                                *ngFor="let data of complexFields"
+                              >
+                                  <div class="w-100 p-3 col-11">
+                                      {{data.name}}
+                                  </div>
+                                  <div class="w-20 p-3 col-1 text-right" (click)="addComplexFieldToDesignerFields(data,-1)">
+                                    <i class="fas fa-caret-right"></i>
+                                </div>
+                               </mat-list-item>
+                          </mat-list>
+                        </mat-expansion-panel>
+                    <mat-divider [inset]="true"></mat-divider>
+                </div>
+    </div>
+
+    <div [ngClass]="(entityDesignerMode != entityDesignerModes.View)?'col-6':'col-8'" class="entity-editor-container-element entity-editor-container-entity-designer">
+        <div *ngIf="entityDefinition && entityDesignerMode == entityDesignerModes.View">Entity name: {{entityDefinition.name}}</div>
+        <mat-form-field  *ngIf="entityDefinition && entityDesignerMode != entityDesignerModes.View" class="entity-definition-name-container">
+            <input [style.color]="(isEntityNameUsed())?'red':'black'" (keyup)="onEntityNameChanged($event)" matInput alphaNumericCharacter placeholder="Entity name" [(ngModel)]="entityDefinition.name">
+        </mat-form-field>
+        <mat-list *ngIf="entityDefinition" class="entity-editor-container-designer" 
+            id="designerFields" 
+            cdkDropListConnectedTo="['simpleFields', 'complexFields']" 
+            cdkDropList 
+            (cdkDropListDropped)="drop($event)"
+            (cdkDropListEntered)="dropListEntered($event)"
+            (cdkDropListExited)="dropListExited($event)"
+        >
+            <mat-list-item  cdkDrag
+                [style.background]="(data)?data.color:'white'"
+                *ngFor="let data of entityDefinition.fieldDefinitions"
+                [class.selected]="selectedFieldDefinition && data && data.guid == selectedFieldDefinition.guid"
+            >
+                <div class="w-80 p-3 col-11 row" (click)="showItemProperties(data)">
+                    <div class="col-4" (click)="showItemProperties(data)">
+                        {{getDesignType(data)}}
+                    </div>
+                    <div class="col-8" (click)="showItemProperties(data)">
+                        {{getDesignName(data)}}
+                    </div>
+                </div>
+                <div class="w-20 p-3 col-1 text-right" (click)="removeDesignerItem(data)">
+                    <i class="fas fa-times"></i>
+                </div>
+            </mat-list-item>
+        </mat-list>                
+    </div>
+
+    <div *ngIf="entityDefinition" [ngClass]="(entityDesignerMode != entityDesignerModes.View)?'col-3':'col-4'" class="entity-editor-container-element entity-editor-container-properties">
+        <ag-grid-angular 
+            style="width: 100%; height: 90%;" 
+            class="ag-theme-balham"
+            [rowData]="(selectedFieldDefinition!=null)?selectedFieldDefinition.properties:null" 
+            [gridOptions]="gridOptions" 
+            >
+            <ag-grid-column [width]="100" headerName="Name" field="name" ></ag-grid-column>
+            <ag-grid-column [width]="170" headerName="Value" field="value"
+                  [headerComponentFramework]="operationsHeaderComponent" [cellRendererFramework]="operationsCellComponent"></ag-grid-column>
+        </ag-grid-angular>
+        
+        <div class="save-done-cancel-container row d-flex justify-content-center">
+            <button *ngIf="isSaveVisible()" class="btn btn-info" [disabled]="isSaveDisabled()" mat-button id="home" (click)="save()">Save</button>
+            <button *ngIf="isDoneVisible()" class="btn btn-success" [disabled]="isDoneDisabled()" mat-button id="home" (click)="done()">Done</button>
+            <button *ngIf="isCancelVisible()" class="btn btn-light" [disabled]="isCancelDisabled()" mat-button id="home" (click)="cancel()">Cancel</button>
+        </div>
+    </div>
+</div>

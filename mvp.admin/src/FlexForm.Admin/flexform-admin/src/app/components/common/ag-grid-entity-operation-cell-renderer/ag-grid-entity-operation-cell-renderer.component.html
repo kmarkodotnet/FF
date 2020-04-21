@@ -1,0 +1,21 @@
+<div class="container">
+
+  <div *ngIf="modifyEntityIsVisible()" [class]="cssClass" (click)="modifyEntity()">
+      <!-- <button class="col-2" mat-button routerLink='user' id="user"></button> -->
+      <i class="fas fa-edit"></i>
+  </div>
+      
+  <div *ngIf="deleteEntityIsVisible()" [class]="cssClass" (click)="deleteEntity()">
+    <i class="fas fa-trash-alt"></i>
+  </div>
+
+  <div *ngIf="viewEntityIsVisible()" [class]="cssClass" (click)="viewEntity()">
+    <!-- <button class="col-2" mat-button routerLink='user' id="user"></button> -->
+    <i class="fas fa-eye"></i>
+  </div>
+      
+  <div *ngIf="cloneEntityIsVisible()" [class]="cssClass" (click)="cloneEntity()">
+    <i class="far fa-copy"></i>
+  </div>
+
+</div>

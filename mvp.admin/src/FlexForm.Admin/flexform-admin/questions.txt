@@ -1,0 +1,146 @@
+https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.textbox?view=netframework-4.8
+
+form designer
+	- entity-form-list
+		- list grouped by entity
+			- grouped elements are forms connected to entity - ok
+			- functions:
+				- entity: modify, new FD - ok
+				- connected forms:
+					- view - ok
+					- modify - ok
+					- delete - ok
+					- clone - ok
+	- form editor
+		- form elements list
+			- entity fields list
+				- load all entities-ok
+					- simple fields-ok
+					- complex fields-ok
+				- reuse component with reduced functions-ok
+				- d&d+add
+			- non binding controls: separator, image, label etc
+				- constant service create
+					- create all elements + get function
+				- model for elements
+				- ui
+				- d&d+add
+		- form designer fields
+			- modify entity definition
+			- simple formcontrols
+				- convert
+				- ui
+				- matching form elements dropdown
+					- constant service 
+				- simple field properties
+				- select one
+				- creating model
+				- static properties
+				- dynamic properties
+			- complex formcontrols
+				- convert
+				- ui
+				- matching form elements dropdown
+				- complex field properties
+					- constant service 
+				- select one
+				- creating model
+				- static properties
+				- dynamic properties
+			- non binding fields
+				- ui
+				- static fields
+				- dynamic fields
+		- properties window
+			- handling dynemic properties of form elements
+			- updating after dynamic property change
+			- form properties (form type: List, Edit, Read; Window-subForm => auto???)
+		- operations
+			- load
+				- convert
+				- testing
+			- save
+				- convert
+				- testing
+			- done
+				- convert
+				- testing
+				- routing
+			- cancel
+				- routing
+		- preview
+			- Plan A: icons binded to elements
+			- Plan B: reuse demo
+				- upgrade model
+				- extension on proper controls
+		- planning regarding form controls
+			- custom properties
+
+---------------------------------------------------
+			
+AutoCompleteBox	- binded on collection
+CascadeComboBox	- binded on collection
+ComboBox	- binded on collection
+DropDown	- binded on collection
+ListBox		- binded on collection
+RadioButton	- binded on collection
+
+CheckBox	- boolean
+
+nem kell ilyen sok, �gy �s annyi legyen, ahogy a material-ban van, a default az dateselector legyen - propertyben legyen hogy id�, vagy d�tum, vagy mindkett�
+TimeBox		-	datetime
+TimePicker	-	datetime
+DateBox		-	datetime
+DatePicker	-	datetime
+DateTimeBox	-	datetime
+DateTimePicker	-	datetime
+
+textre is ugyanaz igaz mint a datetimera
+RichText	- binded on text
+MultiLineText	- binded on text
+SingleLineText	- binded on text
+ReadonlyText	- binded on text
+ExpressionEditor	- binded on text
+
+
+DataGrid	- binded on 
+DocumentDownload	- binded on outerid - van egy template
+DocumentUploader	- binded on outerid 
+
+Tree		- binded on entitycollection, entity
+
+
+Hidden	- binded on any data
+
+Money	- binded on any number
+Decimal	- binded on decimal number
+
+javaslat
+
+Panel		- non binding
+Image		- non binding
+LinkButton	- non binding, command
+LinkText	- non binding, command
+Button		- non binding, command
+Label		- non binding
+Breadcrumb	- non binding
+
+
+
+---------------------------------------------------
+	form name bind to properties
+	cache
+ha túl sok elem megy át, akkor 400 badrequest van
+fullscreen button, hogy kellően széles legyen
+formdefinition editorban entitydefinition.name sortörés, és ikon jobbra tolás 
+form és entity name az editorban menjen lejjebb 
+	form uipropertiesbe visszajön a dropdown adat, később nem frissül a lehetséges értékekkel 
+	nonbindingra megcsinálni a saját property service-t
+	egyediség vizsgálat formcontrolra, formdefinitionra
+formcontrol és formcontrolbinding propertyket szétszedni
+	form isdirty
+	
+user login - secure page
+	facebook
+	gmail
+user logout

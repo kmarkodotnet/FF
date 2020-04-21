@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/fe98ea6a-9613-47cb-b7cb-b628cc45dc07/resourceGroups/ffangular/providers/Microsoft.Web/sites/ffangular",
+    "appService.deploySubpath": "dist"
+}

@@ -1,0 +1,36 @@
+.list-container{
+    height: 80vh;
+    width: 100%;
+    overflow-x: auto;
+}
+
+ul{
+    list-style-type:none;
+    width: 100%;
+}
+li{
+    width: 100%;
+}
+
+.list-container-ul{
+    width: 100%;
+}
+
+.sub-list-item{
+    justify-content: flex-end;
+    padding-right: 30px !important;
+}
+
+.add-item{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-list-item{
+    background: #9dbdf2 !important;
+}
+
+.sub-list-item{
+    background: #fce26f !important;
+}
+

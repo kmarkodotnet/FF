@@ -1,0 +1,18 @@
+<div class="users-list-container">
+    <ag-grid-angular 
+        style="width: 100%; height: 500px;" 
+        class="ag-theme-balham"
+        [rowData]="rowData" 
+        
+        [gridOptions]="gridOptions" 
+        >
+        <!-- [columnDefs]="columnDefs" -->
+        <ag-grid-column [width]="200" headerName="Name" field="name" ></ag-grid-column>
+        <ag-grid-column [width]="250" headerName="E-mail" field="email" ></ag-grid-column>
+        <ag-grid-column [width]="150" headerName="Phone" field="phone" ></ag-grid-column>
+        <ag-grid-column [width]="150" headerName="Role" field="role" ></ag-grid-column>
+        <ag-grid-column [width]="150" headerName="Active" field="active" [cellRendererFramework]="checkboxCellComponent" ></ag-grid-column>
+        <ag-grid-column [width]="170" headerName="Operations" 
+                  [headerComponentFramework]="operationsHeaderComponent" [cellRendererFramework]="operationsCellComponent"></ag-grid-column>
+    </ag-grid-angular>
+</div>

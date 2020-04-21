@@ -1,0 +1,69 @@
+0000000000000000000000000000000000000000 35645f8607f01981b9ae7ab235734ecc278a0661 K2\marko <kmarko.net@gmail.com> 1561491484 +0200	branch: Created from adminapiui
+35645f8607f01981b9ae7ab235734ecc278a0661 1eae421a02b9616e491ac58798255a01822186b2 K2\marko <kmarko.net@gmail.com> 1561721145 +0200	commit: basic dynaform architecture
+1eae421a02b9616e491ac58798255a01822186b2 944dee47fc5c201a9bfeb18020c50b7a04a38603 K2\marko <kmarko.net@gmail.com> 1561726721 +0200	commit: dynaform recursive rendering
+944dee47fc5c201a9bfeb18020c50b7a04a38603 959d9462454d0c4f5ed5aef125610243b676d514 K2\marko <kmarko.net@gmail.com> 1561800736 +0200	commit: primitive forms + forms are clickeble
+959d9462454d0c4f5ed5aef125610243b676d514 9af90c5ac593288092b63dbb85b99eeda0600420 K2\marko <kmarko.net@gmail.com> 1561803901 +0200	commit: dynamic host in form editor
+9af90c5ac593288092b63dbb85b99eeda0600420 0cdd1207f38d6ec42633e8ab75fda2d47d2c4cfb K2\marko <kmarko.net@gmail.com> 1561882073 +0200	commit: rendering non bindings
+0cdd1207f38d6ec42633e8ab75fda2d47d2c4cfb 0f4e418ac16db0c87f9cd711afa4597a41ef61d2 K2\marko <kmarko.net@gmail.com> 1561897208 +0200	commit: editor dynamic form
+0f4e418ac16db0c87f9cd711afa4597a41ef61d2 e2675d54124d94e54a44c83b60894e9954d5153f K2\marko <kmarko.net@gmail.com> 1561921888 +0200	commit: form editor items (including subforms) are selectable
+e2675d54124d94e54a44c83b60894e9954d5153f 8a27bac0a7c9c3d8a3f3215de4bf15a03780bce9 K2\marko <kmarko.net@gmail.com> 1561924272 +0200	commit: form editor items has X remove icon on proper level and also has a border
+8a27bac0a7c9c3d8a3f3215de4bf15a03780bce9 690f49d1f15032744a622b2aac71c2791f92bb6e K2\marko <kmarko.net@gmail.com> 1561926869 +0200	commit: working remove button in form editor
+690f49d1f15032744a622b2aac71c2791f92bb6e 17a7ba673d4c8575cdee6e6dcf37e2b550fd8b82 K2\marko <kmarko.net@gmail.com> 1562275262 +0200	commit: property resolving system basics
+17a7ba673d4c8575cdee6e6dcf37e2b550fd8b82 7192fa2e7d2445abb82222421e80abf25476b26c K2\marko <kmarko.net@gmail.com> 1562342423 +0200	commit: subform name is visible, subform name properties in form editor, and dynaform
+7192fa2e7d2445abb82222421e80abf25476b26c 46a246447e03b9516f1d5802f5cbf80110c2c2c3 K2\marko <kmarko.net@gmail.com> 1562406556 +0200	commit: dynaform view without instance data (preview)
+46a246447e03b9516f1d5802f5cbf80110c2c2c3 e05aee17e6e038e688253f29360ec77cbd8a6690 K2\marko <kmarko.net@gmail.com> 1562410244 +0200	commit: root form control property
+e05aee17e6e038e688253f29360ec77cbd8a6690 0d959c5d4a0d3e74d79873476df38d97136d5505 K2\marko <kmarko.net@gmail.com> 1562411864 +0200	commit: label hpos
+0d959c5d4a0d3e74d79873476df38d97136d5505 0e840c7e8187d67c65ae15f43fee461d19be1a84 K2\marko <kmarko.net@gmail.com> 1562417281 +0200	commit: button title property, form editor dynaform view hovered element has different
+0e840c7e8187d67c65ae15f43fee461d19be1a84 01a1a144446cc702bff3449a629f71e923fbbaa2 K2\marko <kmarko.net@gmail.com> 1562445916 +0200	commit: refactoring: editor item click and selection area
+01a1a144446cc702bff3449a629f71e923fbbaa2 40d531e9c4ecb9d8220b08bad4f8886936cf955c K2\marko <kmarko.net@gmail.com> 1562496778 +0200	commit: fixing form editor item selection - property grid refresh problem
+40d531e9c4ecb9d8220b08bad4f8886936cf955c 568096e8cfacf2cdfc880d5af9bb057b8d875dbb K2\marko <kmarko.net@gmail.com> 1562691035 +0200	commit: form editor drag and drop via async rendering
+568096e8cfacf2cdfc880d5af9bb057b8d875dbb 229be143fbe6a9cf4b0abd57e977109d91be30d9 K2\marko <kmarko.net@gmail.com> 1562699239 +0200	merge adminapiui-dynaform-FADM-5: Fast-forward
+229be143fbe6a9cf4b0abd57e977109d91be30d9 b1473a741024d4881f1e19f08bc7eae6122437c4 K2\marko <kmarko.net@gmail.com> 1562856581 +0200	commit: createProperties must be Promise
+b1473a741024d4881f1e19f08bc7eae6122437c4 0efceb5f53602951b10825e2163b92fe65b27878 K2\marko <kmarko.net@gmail.com> 1562857369 +0200	revert: Revert "createProperties must be Promise"
+0efceb5f53602951b10825e2163b92fe65b27878 8c314e05793e79716e08830930966ca0cbb08131 K2\marko <kmarko.net@gmail.com> 1562871737 +0200	merge origin/master: Merge made by the 'recursive' strategy.
+8c314e05793e79716e08830930966ca0cbb08131 8c7329155ffa75fb9d61566e81a6213d8447fd0f K2\marko <kmarko.net@gmail.com> 1562948835 +0200	merge FADM-143: Merge made by the 'recursive' strategy.
+8c7329155ffa75fb9d61566e81a6213d8447fd0f dbc42343ae58a98d5a3c55c464567330e63fa848 K2\marko <kmarko.net@gmail.com> 1562948849 +0200	merge adminapiui-dynaform-FADM-15: Merge made by the 'recursive' strategy.
+dbc42343ae58a98d5a3c55c464567330e63fa848 c3b2df43e64ba981fb4ac1c48ddfea595b38649d K2\marko <kmarko.net@gmail.com> 1562949510 +0200	commit: automapper backward profiles
+c3b2df43e64ba981fb4ac1c48ddfea595b38649d cdd73c6d9901be506e70dd4dc349894fd9356d11 K2\marko <kmarko.net@gmail.com> 1562964063 +0200	commit: FADM-141 - Add DDE input prefix validation to group creation
+cdd73c6d9901be506e70dd4dc349894fd9356d11 7e60b9003df386fd428083307c5f96114cd37503 K2\marko <kmarko.net@gmail.com> 1562964074 +0200	merge FADM-145: Merge made by the 'recursive' strategy.
+7e60b9003df386fd428083307c5f96114cd37503 4e7a4ab3a60a37202a7bb460540b6f1c0455f468 K2\marko <kmarko.net@gmail.com> 1563000748 +0200	commit: FADM-142 - fixing formcontrol reloading problem
+4e7a4ab3a60a37202a7bb460540b6f1c0455f468 8d265e5ec2d90439c548869aa079232905ea83f1 K2\marko <kmarko.net@gmail.com> 1563388004 +0200	pull origin adminapiui-dynaform: Fast-forward
+8d265e5ec2d90439c548869aa079232905ea83f1 72392a22408b98f705b2b5f9602093439c951d36 K2\marko <kmarko.net@gmail.com> 1563476556 +0200	commit: finishing implementation on entity editor regarding property services
+72392a22408b98f705b2b5f9602093439c951d36 dc9cb6b1330aea4d80078cf444b753a793c4f64a K2\marko <kmarko.net@gmail.com> 1563476581 +0200	commit: cosmetic
+dc9cb6b1330aea4d80078cf444b753a793c4f64a 275ecee552111d6a4bb7b7a44249409733e66ccc K2\marko <kmarko.net@gmail.com> 1563476589 +0200	pull origin adminapiui-dynaform: Merge made by the 'recursive' strategy.
+275ecee552111d6a4bb7b7a44249409733e66ccc 402e67b704a5628e452ff955c25e8f08e57fbcf8 K2\marko <kmarko.net@gmail.com> 1563518188 +0200	merge origin/master: Merge made by the 'recursive' strategy.
+402e67b704a5628e452ff955c25e8f08e57fbcf8 70e62b7f03a6f0e911c735cc362e919a2b078ae6 K2\marko <kmarko.net@gmail.com> 1563542794 +0200	pull origin adminapiui-dynaform: Merge made by the 'recursive' strategy.
+70e62b7f03a6f0e911c735cc362e919a2b078ae6 0eb3a83c1a7d86f4310b479d63ed8d5b9da40af0 K2\marko <kmarko.net@gmail.com> 1563563979 +0200	commit: fixing fielddefinition loading problem
+0eb3a83c1a7d86f4310b479d63ed8d5b9da40af0 d539826ce4ed813f4ef8016dadcb2710698a2823 K2\marko <kmarko.net@gmail.com> 1563623877 +0200	pull origin adminapiui-dynaform: Fast-forward
+d539826ce4ed813f4ef8016dadcb2710698a2823 7999d8ed60e790d3924afa5771b0035cf93693db K2\marko <kmarko.net@gmail.com> 1563624959 +0200	commit (merge): Merge branch 'FADM-135' into adminapiui-dynaform
+7999d8ed60e790d3924afa5771b0035cf93693db 4a18f5af9447088fa32b0fc47c65837f160bb40f K2\marko <kmarko.net@gmail.com> 1564124435 +0200	merge origin/master: Merge made by the 'recursive' strategy.
+4a18f5af9447088fa32b0fc47c65837f160bb40f da2e61cafeb24ceb6d4b89e229e9a83ebd6a664c K2\marko <kmarko.net@gmail.com> 1564237786 +0200	pull origin adminapiui-dynaform: Fast-forward
+da2e61cafeb24ceb6d4b89e229e9a83ebd6a664c 0bd004af8c287901d2dda5aafbf6b57187d02bd8 K2\marko <kmarko.net@gmail.com> 1564255275 +0200	commit: autocomplete
+0bd004af8c287901d2dda5aafbf6b57187d02bd8 e13e4e7ed911deb19fc80e78a31abfc6f7271448 K2\marko <kmarko.net@gmail.com> 1564300510 +0200	commit: visual templates
+e13e4e7ed911deb19fc80e78a31abfc6f7271448 39c97ced0a12cbb6a478263a64b4f920f62c3c87 K2\marko <kmarko.net@gmail.com> 1564308869 +0200	commit: properties services pool + link template proeprties
+39c97ced0a12cbb6a478263a64b4f920f62c3c87 23ae470f5187d75660d6fec8de57800c0ba3aa26 K2\marko <kmarko.net@gmail.com> 1564311324 +0200	commit: datetime
+23ae470f5187d75660d6fec8de57800c0ba3aa26 b62ae8a8603df64de7263c37d2f05462163cfcbc K2\marko <kmarko.net@gmail.com> 1564311554 +0200	commit: di fix
+b62ae8a8603df64de7263c37d2f05462163cfcbc 3aee3d41fd904d255b6d2f9054b38c3547c947c6 K2\marko <kmarko.net@gmail.com> 1564735031 +0200	commit: FADM-165 - Application start problem
+3aee3d41fd904d255b6d2f9054b38c3547c947c6 0943b088c03c282965e4e58710e454220675bc54 K2\marko <kmarko.net@gmail.com> 1564735163 +0200	commit: updating chrome port, and updating packegaes
+0943b088c03c282965e4e58710e454220675bc54 3136050ee10671052fbe7f4bb5bc1f15fc463373 K2\marko <kmarko.net@gmail.com> 1564735313 +0200	commit: FADM-113-Dyna control Icon
+3136050ee10671052fbe7f4bb5bc1f15fc463373 8ece22e83185760754dc7b32575b390afedf9aaf K2\marko <kmarko.net@gmail.com> 1564735330 +0200	commit: packages update
+8ece22e83185760754dc7b32575b390afedf9aaf 4971e4f1466d6c7a8442f1bf96cf395bed98ea8c K2\marko <kmarko.net@gmail.com> 1564735408 +0200	commit: FADM-164-Facebook & google login in client side
+4971e4f1466d6c7a8442f1bf96cf395bed98ea8c 1288850a6565cd5a69750c41defbfd999bfc93ca K2\marko <kmarko.net@gmail.com> 1564735456 +0200	commit: certificates
+1288850a6565cd5a69750c41defbfd999bfc93ca c8e3cedff6e73ab9620834b20addd8f2723a97e8 K2\marko <kmarko.net@gmail.com> 1564739324 +0200	commit: login
+c8e3cedff6e73ab9620834b20addd8f2723a97e8 92eb1b2771111079392214bc64df0e756d0c9204 K2\marko <kmarko.net@gmail.com> 1564745529 +0200	commit: fix for npm build
+92eb1b2771111079392214bc64df0e756d0c9204 8efe56cdc9991db86a1c9937cc0708d7a9396bc4 K2\marko <kmarko.net@gmail.com> 1564758067 +0200	commit: oidc js
+8efe56cdc9991db86a1c9937cc0708d7a9396bc4 50f9fa749cb34147ecd09f844ccf7186c7603f2e K2\marko <kmarko.net@gmail.com> 1564813534 +0200	commit: identity
+50f9fa749cb34147ecd09f844ccf7186c7603f2e 0efe95b8dae780444f3fc89208652a64673be64e K2\marko <kmarko.net@gmail.com> 1564831975 +0200	commit: radiobutton
+0efe95b8dae780444f3fc89208652a64673be64e 5fd4bea422a04d2fd2e88b9ca98392ececeb6472 K2\marko <kmarko.net@gmail.com> 1564909121 +0200	commit: FADM-112 - hidden
+5fd4bea422a04d2fd2e88b9ca98392ececeb6472 851b05fb6a38cafb2a657a3005329fec37400c37 K2\marko <kmarko.net@gmail.com> 1564912535 +0200	commit: indentity route
+851b05fb6a38cafb2a657a3005329fec37400c37 5dc9af12c9359528f81956dc34de806e60a4a029 K2\marko <kmarko.net@gmail.com> 1564915996 +0200	commit: oidc has user info
+5dc9af12c9359528f81956dc34de806e60a4a029 bd2afc875b88d77514164a2300a3da1c9081db54 K2\marko <kmarko.net@gmail.com> 1564918409 +0200	commit: FADM-156 save cancel buttons text
+bd2afc875b88d77514164a2300a3da1c9081db54 b8bcd31e1686d0af56e43772b8c822fd4b82c2a4 K2\marko <kmarko.net@gmail.com> 1564944010 +0200	commit (merge): Merge commit '22822c09d104e3fd5fba457d62d3031bdc315368' into adminapiui-dynaform
+b8bcd31e1686d0af56e43772b8c822fd4b82c2a4 6f856556478cb205beacb815264bc06d78b343bb K2\marko <kmarko.net@gmail.com> 1564944490 +0200	commit: angular rename from containerformdefinition to subformdefinition + fix backend code
+6f856556478cb205beacb815264bc06d78b343bb f4e57c00ad06034e44a9f96ac8d708f3f32f259e K2\marko <kmarko.net@gmail.com> 1565034517 +0200	merge 54de97e729825c34a97b6144f861b837c9d10328: Merge made by the 'recursive' strategy.
+f4e57c00ad06034e44a9f96ac8d708f3f32f259e 6b8f73df3007690e5d881dffdd98349e9e48f4b4 K2\marko <kmarko.net@gmail.com> 1565035234 +0200	commit: solve backend build error after merge
+6b8f73df3007690e5d881dffdd98349e9e48f4b4 33fb6c61ef7d08952f44e49324c05f8a1f1631f5 K2\marko <kmarko.net@gmail.com> 1565036123 +0200	commit: move back to port 4200
+33fb6c61ef7d08952f44e49324c05f8a1f1631f5 f124515ec81171ab45cfe5510ffe89c962b554a9 K2\marko <kmarko.net@gmail.com> 1565037472 +0200	commit: FADM-162 - formcontrolitemsource
+f124515ec81171ab45cfe5510ffe89c962b554a9 e044ee7d61e4cc5fba7798f16a9c44dda6585f91 K2\marko <kmarko.net@gmail.com> 1565037716 +0200	merge 39cd10b3b83f11517841fb9ed503f7d8229565e3: Merge made by the 'recursive' strategy.
+e044ee7d61e4cc5fba7798f16a9c44dda6585f91 d6da8a53c8541541318a64e7d989d650252a57a3 K2\marko <kmarko.net@gmail.com> 1565038316 +0200	merge origin/master: Merge made by the 'recursive' strategy.
+d6da8a53c8541541318a64e7d989d650252a57a3 77c29c08679755a1e4b32c530a6f31be5e0eb570 K2\marko <kmarko.net@gmail.com> 1565120621 +0200	commit: FADM-163 - basic checkboxgroup frontend backend
