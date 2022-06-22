@@ -17,7 +17,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.2.6" />
     <PackageReference Include="NetAppDev.DataAccess" Version="1.1.7" />
     <PackageReference Include="NetAppDev.DataAccess.EFCore" Version="1.1.10" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
   <ItemGroup>
